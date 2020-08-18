@@ -1,0 +1,122 @@
+
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    min-height: 68vh;
+    
+    flex-wrap: wrap;
+    
+    background: #010615;
+}
+
+.boxes{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    transition: 0.5s;
+    background: #060c21;
+}
+.boxes:hover{
+    height: 615px;
+}
+.boxes .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    
+    box-sizing: border-box;
+}
+
+.boxes .imgBx img{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+    height: 500px;
+}
+
+.boxes:hover .imgBx img{
+    opacity: 1;
+}
+
+.boxes:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: #fff;
+    z-index: -0.5;
+}
+
+.boxes:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.boxes:before,
+.boxes:after{
+    background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+
+.boxes:nth-child(2):before,
+.boxes:nth-child(2):after{
+    background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+
+}
+
+.boxes:nth-child(3):before,
+.boxes:nth-child(3):after{
+    background: linear-gradient(235deg,#772aff,#010615,#2196f3);
+
+}
+
+.boxes .contents{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.boxes:hover .contents{
+    opacity: 1;
+}
+
+.boxes .contents h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.boxes .contents h3 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}

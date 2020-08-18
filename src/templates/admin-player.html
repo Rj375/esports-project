@@ -1,0 +1,28 @@
+<div>
+
+
+
+
+
+  <b-input-group size="md">
+    <label for="Search" style="margin-top: 30px; margin-left: 20px;">
+      <h3>Search</h3>
+    </label>
+    <b-form-input type="search" id="filterInput" placeholder="Type to Search"></b-form-input>
+
+
+  </b-input-group>
+  <div class="button">
+    <b-button variant="success" size="sm" href="#" class="button-space">Add Player</b-button>
+    <b-button variant="primary" size="sm" href="#" class="button-space">Update</b-button>
+    <b-button variant="danger" size="sm" href="#" class="button-space">Delete</b-button>
+  </div>
+
+  <hr>
+  <h1 style="color: chocolate; font-style: italic; font-weight: bold;">Players Information</h1>
+  <b-table :items="items" :fields="fields">
+
+
+
+  </b-table>
+</div>

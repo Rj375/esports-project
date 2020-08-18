@@ -1,0 +1,133 @@
+.form{
+    min-height: 68vh;
+    border-style: solid;
+    width: 100%;
+    margin-top: 10px;
+    
+    background: -webkit-linear-gradient(left, #7579ff, #bee4ef);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    
+    
+}
+.form h2{
+    font-weight: bold;
+    color: #17a2b8;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#boxer{
+    width: 100;
+    outline-style: dashed;
+    border-style: solid;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    margin: 40px 0 0 600px;
+    
+    padding: 80px;
+    padding-top: 40px;
+    
+    position: absolute;
+    background: lightyellow;
+    
+}
+
+#input-group-1{
+    color: #17a2b8;
+    font-size: 18px;
+    font-weight: bold;
+}
+#input-group-2{
+    color: #17a2b8;
+    font-size: 18px;
+    font-weight: bold;
+    
+
+}
+
+
+
+
+
+
+
+.soc{
+    position: relative;
+    display: flex;
+    margin: 40px 0 0 60px;
+  
+}
+
+.soc li{
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.soc li a{
+    text-decoration: none;
+    
+}
+
+.soc li a .fa{
+    color: #17a2b8;
+    margin: 10px;
+    font-size: 24px;
+    
+}
+
+.soc li:hover a .fa{
+    color: black;
+    
+}
+
+
+#boxer input[type = "text"], #boxer input[type = "password"]{
+    border-radius: 24px;
+    background: none;
+    
+    display: block;
+    
+    outline: none;
+    transition: 0.25;
+    width: 200px;
+    margin-left: 50px;
+    align-items: center;
+    
+    cursor: pointer;
+    padding: 14px 40px;
+}
+#boxer input[type = "text"]:focus, #boxer input[type = "password"]:focus{
+    width: 250px;
+    border-color: #17a2b8;
+
+}
+
+#input-1-live-feedback{
+    font-size: 12px;
+}
+
+
+#input-button, #input-button1 {
+     
+     font-size: 24px;
+     border-radius: 24px;
+     background: none;
+     border: 0;
+     display: flexbox;
+     border: 2px solid #17a2b8;
+     outline: none;
+     transition: 0.25;
+     color: #17a2b8;
+     margin: 40px 20px 0 20px;
+     float: left;
+     padding: 0 15px;
+
+}
+
+#input-button:hover, #input-button1:hover {
+    color: black;
+    border: 2px solid black;
+    
+}
+

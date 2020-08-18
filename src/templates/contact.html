@@ -1,0 +1,74 @@
+<div>
+  
+  <section id="body-contact">
+    <div class="container">
+      <div class="contactinfo">
+        <div>
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <span>Traffic chowk, <br> 
+                Butwal, <br> 
+                80891</span>
+            </li>
+            <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <span>rams2571996@gmail.com</span>
+            </li>
+          </li>
+          <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>
+            <span>9821552353</span>
+          </li>
+          </ul>
+
+          <ul class="sci">
+            <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+
+        </div>
+      </div>
+     
+      <div  name="myForm"  @submit="submitme" class="contactForm">
+       
+        <h2>Message</h2>
+        
+        <div  class="formBox">
+          <div class="inputBox" w50>
+         
+            <input  type="text" name="fmane" v-model="firstname" required>
+            <label>First Name</label>
+          </div>
+          <div class="inputBox" w50>
+           
+            <input  type="text" name="fname" v-model="lastname" required>
+            <label>Last Name</label>
+          </div>
+          <div class="inputBox" w50>
+            
+            <input  id="mail" type="email" name="email" v-model="email" required>
+            <label>Email Address</label>
+          </div>
+          <div class="inputBox" w50>
+            
+            <input  type="text" name="fname" v-model="mobile" required>
+            <label>Mobile Number</label>
+          </div>
+          <div class="inputBox" w100>
+           
+            <textarea  name="fname" v-model="message" required></textarea>
+            <label>Write your message here....</label>
+          </div>
+          <div class="inputBox" w50>
+            <input type="submit" @click="gotohome" value="send">
+          </div>
+
+
+        </div>
+      </div>
+    
+    
+    </div>
+  </section>
+</div>

@@ -1,0 +1,49 @@
+
+
+footer{
+  position: fixed;
+  
+ 
+  bottom: 0px;
+  width: 100%;
+  
+  
+  background: #17a2b8;
+  padding: 1px 100px 3px 100px;
+  
+  
+  
+}
+section h2{
+  text-decoration: underline;
+}
+.about, .address, .partners{
+  width: 33.33%;
+  position: relative;
+  float: left;
+}
+
+
+.address p span{
+      margin: auto;
+      font-size: 18px;
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+
+     
+}
+.partners li {
+  list-style: none;
+
+}
+
+.partners li a{
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+  
+.partners li a:hover{
+  color: white;
+}

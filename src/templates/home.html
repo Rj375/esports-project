@@ -1,0 +1,53 @@
+  <div class="hello">
+
+
+    <div id="time">
+      <p> {{showtime}} </p>
+
+    </div>
+
+
+    <b-carousel id="carousel-1" :interval="4000" controls indicators background="#ababab" img-width="500" img-height="100"
+      style="text-shadow: 1px 1px 2px #333; margin: 10px;">
+      <!-- Text slides with image -->
+      <b-carousel-slide img-src="../assets/img/eve.jpg">
+        <h1 style="color: skyblue; font-weight: bold;">Welcome To Everest Family</h1>
+      </b-carousel-slide>
+
+      <!-- Slides with custom text -->
+      <b-carousel-slide img-src="../assets/img/csgo.jpg">
+
+      </b-carousel-slide>
+
+      <!-- Slides with image only -->
+      <b-carousel-slide img-src="../assets/img/pubg.jpg"></b-carousel-slide>
+
+      <!-- Slides with img slot -->
+      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+      <b-carousel-slide>
+        <template v-slot:img>
+          <img class="d-block img-fluid w-100" width="500" height="100" src="../assets/img/dota.jpg" alt="image slot">
+        </template>
+      </b-carousel-slide>
+
+      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+      <b-carousel-slide img-src="../assets/img/cod.jpg">
+
+      </b-carousel-slide>
+
+
+    </b-carousel>
+
+
+
+
+    <BUtton v-b-toggle.my-collapse-4 id="demo" type="button" @click="subme">clickme</BUtton>
+    <b-collapse id="my-collapse-4">
+      <p id="dino"></p>
+      <p id="dino1"></p>
+    </b-collapse>
+
+
+
+
+  </div>

@@ -1,0 +1,43 @@
+<div class="form">
+  <b-form id="boxer" @submit.stop.prevent="logme" class="was-validated">
+    <div class="head">
+      <h2>Login</h2>
+      <div class="socials">
+        <ul class="soc">
+          <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <b-form-group id="input-group-1" label="Username:" label-for="input-1"
+      description="We'll never share your Username with anyone else.">
+      <b-form-input id="input-info-1" v-model="username" type="text" required placeholder="Enter Username">
+      </b-form-input>
+      <b-form-invalid-feedback id="input-1-live-feedback">Username is required.</b-form-invalid-feedback>
+      <b-form-valid-feedback id="input-1-live-feedback">Looks good.</b-form-valid-feedback>
+    </b-form-group>
+
+    </b-form-group>
+
+    </b-form-group>
+
+
+    <b-form-group id="input-group-2" label="Password:" label-for="input-2">
+      <b-form-input id="input-info-2" type="password" required placeholder="Enter password" v-model="password">
+      </b-form-input>
+      <b-form-invalid-feedback id="input-1-live-feedback">Password is required.</b-form-invalid-feedback>
+      <b-form-valid-feedback id="input-1-live-feedback">Looks Good.</b-form-valid-feedback>
+    </b-form-group>
+
+    </b-form-group>
+
+    <b-button id="input-button" type="submit" variant="primary">Login</b-button>
+    <b-button id="input-button1" variant="primary" @click="go">Cancel</b-button>
+
+
+
+
+  </b-form>
+</div>
